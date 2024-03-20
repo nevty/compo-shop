@@ -779,6 +779,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:^20.11.30":
+  version: 20.11.30
+  resolution: "@types/node@npm:20.11.30"
+  dependencies:
+    undici-types: "npm:~5.26.4"
+  checksum: 10/78515bc768d2b878e2e06a1c20eb4f5840072b79b8d28ff3dd0a7feaaf48fd3a2ac03cfa5bc7564da82db5906b43e9ba0e5df9f43d870b7aae2942306e208815
+  languageName: node
+  linkType: hard
+
 "@types/prop-types@npm:*":
   version: 15.7.11
   resolution: "@types/prop-types@npm:15.7.11"
@@ -1317,6 +1326,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "compo-shop@workspace:."
   dependencies:
+    "@types/node": "npm:^20.11.30"
     "@types/react": "npm:^18.2.66"
     "@types/react-dom": "npm:^18.2.22"
     "@typescript-eslint/eslint-plugin": "npm:^7.2.0"
@@ -3372,6 +3382,13 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 10/f5f9a4133c2670761f0166eae5b3bafbc4a3fc24f0f42a93c9c893d9e9d6e66ea066969c5e7483fa66b4ae0e99125592553f3b92fd3599484de8be13b0615176
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~5.26.4":
+  version: 5.26.5
+  resolution: "undici-types@npm:5.26.5"
+  checksum: 10/0097779d94bc0fd26f0418b3a05472410408877279141ded2bd449167be1aed7ea5b76f756562cb3586a07f251b90799bab22d9019ceba49c037c76445f7cddd
   languageName: node
   linkType: hard
 
