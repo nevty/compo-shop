@@ -1,6 +1,7 @@
 import { IconContext } from "react-icons";
 import { Routes, Route } from "react-router-dom";
 
+import { ProductPage } from "@pages/product";
 import { HeaderWidget } from "@widgets/header";
 
 import { Navigation, Footer } from "./ui";
@@ -14,7 +15,7 @@ function App() {
         <Navigation />
         <div className="w-full h-px bg-slate-200" />
         <Routes>
-          <Route path="/" element={<div />} />
+          <Route path="/" element={<ProductPage />} />
         </Routes>
         <Footer />
       </IconContext.Provider>
