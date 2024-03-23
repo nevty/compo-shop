@@ -1,30 +1,49 @@
-# React + TypeScript + Vite
+# Стэк:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- TypeScript
+- React
+- Vite
+- Tailwind CSS
 
-Currently, two official plugins are available:
+# Установка и Запуск
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Клонируйте репозиторий:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```sh
+git clone https://github.com/nevty/compo-shop.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Перейдите в папку проекта:
+
+```sh
+cd compo-shop
+```
+
+3. Установите зависимости с помощью менеджера пакетов `yarn`:
+
+```sh
+yarn
+```
+
+4. Запустите проект локально:
+
+```sh
+yarn dev
+```
+
+# Структура файлов по FSD
+
+- `public` - папка для файлов, которые доступны из корня сайта (логотип, картинки и т.д.).
+- `src` - корневая директория.
+  - `app` - основное приложение с роутингом, лэйаутом страницы, провайдерами и т.д
+  - `pages/product` - страница продукта.
+  - `widgets/header` - виджет с шапкой сайта(логотип, меню, пользователь и т.д.).
+  - `features` - функциональные блоки.
+  - `shared` - общие модули, которые используются во всех слоях.
+    - `lib/tailwind-merge` - `cn` утилита для работы с тайлвинд-классами.
+    - `ui` - UI-компоненты.
+  - `index.css` - глобальные стили.
+  - `main.tsx` - точка входа.
+- `index.html` - шаблон html-страницы.
+
+
